@@ -1,0 +1,982 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>419</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>700</width>
+    <height>419</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Text Cipher</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QWidget" name="Menu" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>135</width>
+        <height>401</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(38, 42, 65, 255), stop:1 rgba(69, 78, 111, 255));</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="0">
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QWidget" name="widget_2" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>71</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>135</width>
+             <height>71</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:transparent;
+image: url(:/Images/Logo.png);</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="QPushButton" name="HomeButton">
+             <property name="styleSheet">
+              <string notr="true">QPushButton#HomeButton{
+	
+	background:transparent;
+	border:0px;
+	color:#f5f6fa;
+	font: 75 18pt &quot;Comic Sans MS&quot;;
+}
+
+QPushButton#HomeButton:hover{
+	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.125 rgba(69, 78, 111, 255), stop:1 rgba(5, 220, 249, 0));
+	border:0px;
+	color:#f5f6fa;
+	font: 75 18pt &quot;Comic Sans MS&quot;;
+
+}</string>
+             </property>
+             <property name="text">
+              <string>Home</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="XORButton">
+             <property name="minimumSize">
+              <size>
+               <width>135</width>
+               <height>33</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton#XORButton{
+	
+	background:transparent;
+	border:0px;
+	color:#f5f6fa;
+	font: 75 10pt &quot;Comic Sans MS&quot;;
+
+}
+
+QPushButton#XORButton:hover{
+	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.125 rgba(69, 78, 111, 255), stop:1 rgba(5, 220, 249, 0));
+	border:0px;
+	color:#f5f6fa;
+	font: 75 10pt &quot;Comic Sans MS&quot;;
+
+}</string>
+             </property>
+             <property name="text">
+              <string>XOR Cipher</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="MorseCodeButton">
+             <property name="minimumSize">
+              <size>
+               <width>135</width>
+               <height>33</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton#MorseCodeButton{
+	
+	background:transparent;
+	border:0px;
+	color:#f5f6fa;
+	font: 75 10pt &quot;Comic Sans MS&quot;;
+	width:135px;
+}
+
+QPushButton#MorseCodeButton:hover{
+	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.125 rgba(69, 78, 111, 255), stop:1 rgba(5, 220, 249, 0));
+	border:0px;
+	color:#f5f6fa;
+	font: 75 10pt &quot;Comic Sans MS&quot;;
+
+}</string>
+             </property>
+             <property name="text">
+              <string>Morse Code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="ROT13Button">
+             <property name="minimumSize">
+              <size>
+               <width>135</width>
+               <height>33</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton#ROT13Button{
+	
+	background:transparent;
+	border:0px;
+	color:#f5f6fa;
+	font: 75 10pt &quot;Comic Sans MS&quot;;
+
+}
+
+QPushButton#ROT13Button:hover{
+	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.125 rgba(69, 78, 111, 255), stop:1 rgba(5, 220, 249, 0));
+	border:0px;
+	color:#f5f6fa;
+	font: 75 10pt &quot;Comic Sans MS&quot;;
+
+}</string>
+             </property>
+             <property name="text">
+              <string>ROT13 Cipher</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="CaesarButton">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>33</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton#CaesarButton{
+	
+	background:transparent;
+	border:0px;
+	color:#f5f6fa;
+	font: 75 10pt &quot;Comic Sans MS&quot;;
+
+}
+
+QPushButton#CaesarButton:hover{
+	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.125 rgba(69, 78, 111, 255), stop:1 rgba(5, 220, 249, 0));
+	border:0px;
+	color:#f5f6fa;
+	font: 75 10pt &quot;Comic Sans MS&quot;;
+
+}</string>
+             </property>
+             <property name="text">
+              <string>Caesar Cipher</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="AtbashButton">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>32</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton#AtbashButton{
+	
+	background:transparent;
+	border:0px;
+	color:#f5f6fa;
+	font: 75 10pt &quot;Comic Sans MS&quot;;
+
+}
+
+QPushButton#AtbashButton:hover{
+	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.125 rgba(69, 78, 111, 255), stop:1 rgba(5, 220, 249, 0));
+	border:0px;
+	color:#f5f6fa;
+	font: 75 10pt &quot;Comic Sans MS&quot;;
+
+}</string>
+             </property>
+             <property name="text">
+              <string>Atbash Cipher</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="PolybiusButton">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>32</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton#PolybiusButton{
+	
+	background:transparent;
+	border:0px;
+	color:#f5f6fa;
+	font: 75 10pt &quot;Comic Sans MS&quot;;
+
+}
+
+QPushButton#PolybiusButton:hover{
+	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.125 rgba(69, 78, 111, 255), stop:1 rgba(5, 220, 249, 0));
+	border:0px;
+	color:#f5f6fa;
+	font: 75 10pt &quot;Comic Sans MS&quot;;
+
+}</string>
+             </property>
+             <property name="text">
+              <string>Polybius Square</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="BaconianButton">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>32</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton#BaconianButton{
+	
+	background:transparent;
+	border:0px;
+	color:#f5f6fa;
+	font: 75 10pt &quot;Comic Sans MS&quot;;
+
+}
+
+QPushButton#BaconianButton:hover{
+	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.125 rgba(69, 78, 111, 255), stop:1 rgba(5, 220, 249, 0));
+	border:0px;
+	color:#f5f6fa;
+	font: 75 10pt &quot;Comic Sans MS&quot;;
+
+}</string>
+             </property>
+             <property name="text">
+              <string>Baconian Cipher</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="RailFenceButton">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>32</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton#RailFenceButton{
+	
+	background:transparent;
+	border:0px;
+	color:#f5f6fa;
+	font: 75 9pt &quot;Comic Sans MS&quot;;
+
+}
+
+QPushButton#RailFenceButton:hover{
+	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.125 rgba(69, 78, 111, 255), stop:1 rgba(5, 220, 249, 0));
+	border:0px;
+	color:#f5f6fa;
+	font: 75 9pt &quot;Comic Sans MS&quot;;
+
+}</string>
+             </property>
+             <property name="text">
+              <string>Rail Fence Cipher</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="SMButton">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>32</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton#SMButton{
+	
+	background:transparent;
+	border:0px;
+	color:#f5f6fa;
+	font: 75 8pt &quot;Comic Sans MS&quot;;
+
+}
+
+QPushButton#SMButton:hover{
+	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.125 rgba(69, 78, 111, 255), stop:1 rgba(5, 220, 249, 0));
+	border:0px;
+	color:#f5f6fa;
+	font: 75 8pt &quot;Comic Sans MS&quot;;
+
+}</string>
+             </property>
+             <property name="text">
+              <string>Simple Substitution</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QStackedWidget" name="HomePages">
+      <property name="minimumSize">
+       <size>
+        <width>10</width>
+        <height>324</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(245, 246, 250);</string>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="home">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>541</width>
+         <height>401</height>
+        </size>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item row="0" column="0" alignment="Qt::AlignTop">
+         <widget class="QWidget" name="HomeHeader" native="true">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>581</width>
+            <height>77</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>77</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:0, stop:0 rgba(9, 191, 243, 255), stop:1 rgba(5, 220, 249, 255));</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+         <widget class="QWidget" name="BK" native="true">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>565</width>
+            <height>324</height>
+           </size>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">image: url(:/Images/BK.png);
+image-position:left;
+padding-left:50px;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="MainPage">
+       <property name="minimumSize">
+        <size>
+         <width>541</width>
+         <height>401</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(245, 246, 250);</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_6">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QWidget" name="MainPageHeader" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>360</width>
+            <height>77</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:0, stop:0 rgba(9, 191, 243, 255), stop:1 rgba(5, 220, 249, 255));</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_3">
+           <property name="leftMargin">
+            <number>10</number>
+           </property>
+           <property name="topMargin">
+            <number>10</number>
+           </property>
+           <property name="rightMargin">
+            <number>10</number>
+           </property>
+           <property name="bottomMargin">
+            <number>10</number>
+           </property>
+           <item row="0" column="0" rowspan="2">
+            <widget class="QPushButton" name="New">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>150</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton#New{
+background-color:#f5f6fa;
+font: 18pt &quot;Leelawadee&quot;;
+color: rgb(69, 78, 111);
+border:0px;
+}
+
+QPushButton#New:hover{
+	
+background-color: rgb(237, 238, 241);
+font: 18pt &quot;Leelawadee&quot;;
+color: rgb(69, 78, 111);
+border:0px;
+	
+}</string>
+             </property>
+             <property name="text">
+              <string>New</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>10</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="2">
+            <widget class="QCheckBox" name="one">
+             <property name="styleSheet">
+              <string notr="true">background:transparent;
+color:#f5f6fa;
+font: 10pt &quot;Leelawadee&quot;;</string>
+             </property>
+             <property name="text">
+              <string>This Encryption</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3" rowspan="2">
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Preferred</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>193</width>
+               <height>54</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="4">
+            <widget class="QLabel" name="enterkeyLabel">
+             <property name="minimumSize">
+              <size>
+               <width>141</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:transparent;
+font: 14pt &quot;Leelawadee&quot;;
+color:#f5f6fa;
+</string>
+             </property>
+             <property name="text">
+              <string>Enter The Key</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QCheckBox" name="all">
+             <property name="styleSheet">
+              <string notr="true">background:transparent;
+color:#f5f6fa;
+font: 10pt &quot;Leelawadee&quot;;</string>
+             </property>
+             <property name="text">
+              <string>All Encryption</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="4">
+            <widget class="QLineEdit" name="Key">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>140</width>
+               <height>23</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="baseSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);
+font: 8pt &quot;Comic Sans MS&quot;;
+color: rgb(69, 78, 111);</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QStackedWidget" name="TextArea">
+            <property name="minimumSize">
+             <size>
+              <width>391</width>
+              <height>304</height>
+             </size>
+            </property>
+            <widget class="QWidget" name="page">
+             <layout class="QGridLayout" name="gridLayout_2">
+              <item row="0" column="0">
+               <widget class="QTextEdit" name="textEdit">
+                <property name="contextMenuPolicy">
+                 <enum>Qt::DefaultContextMenu</enum>
+                </property>
+                <property name="autoFillBackground">
+                 <bool>false</bool>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QTextEdit{
+background:white;
+margin-left:10px;
+margin-top:10px;
+margin-bottom:10px;
+font: 16pt &quot;Comic Sans MS&quot;;
+color: rgb(69, 78, 111);
+}
+
+QScrollBar:vertical {
+    border: 0px;
+    background-color:rgb(9, 191, 243);
+}
+
+
+QScrollBar::handle:vertical {
+    border: 0px;
+    background-color:rgb(9, 191, 243);
+}</string>
+                </property>
+                <property name="inputMethodHints">
+                 <set>Qt::ImhMultiLine</set>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="verticalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOn</enum>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QAbstractScrollArea::AdjustIgnored</enum>
+                </property>
+                <property name="autoFormatting">
+                 <set>QTextEdit::AutoNone</set>
+                </property>
+                <property name="overwriteMode">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="page_2">
+             <layout class="QGridLayout" name="gridLayout_7">
+              <item row="0" column="0">
+               <widget class="QTextEdit" name="textEditOUTPUT">
+                <property name="styleSheet">
+                 <string notr="true">QTextEdit{
+background:white;
+margin-left:10px;
+margin-top:10px;
+margin-bottom:10px;
+font: 16pt &quot;Comic Sans MS&quot;;
+color: rgb(69, 78, 111);
+}
+
+QScrollBar:vertical {
+    border: 0px;
+    background-color:rgb(9, 191, 243);
+   
+}
+
+QScrollBar::handle:vertical {
+    border: 0px;
+    background-color:rgb(9, 191, 243);
+}
+</string>
+                </property>
+                <property name="verticalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOn</enum>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <property name="spacing">
+             <number>10</number>
+            </property>
+            <property name="leftMargin">
+             <number>10</number>
+            </property>
+            <property name="topMargin">
+             <number>10</number>
+            </property>
+            <property name="rightMargin">
+             <number>10</number>
+            </property>
+            <property name="bottomMargin">
+             <number>10</number>
+            </property>
+            <item>
+             <widget class="QPushButton" name="openFile">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>145</width>
+                <height>53</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton#openFile{
+	
+	background-color: rgb(9, 191, 243);
+	border:5px;
+	color:#f5f6fa;
+	font: 18pt &quot;Leelawadee&quot;;
+	
+}
+
+QPushButton#openFile:hover{
+	
+	background-color: rgb(9, 169, 206);
+	border:5px;
+	color:#f5f6fa;
+	font: 18pt &quot;Leelawadee&quot;;
+}</string>
+              </property>
+              <property name="text">
+               <string>Open File</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="Encryption">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>145</width>
+                <height>53</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton#Encryption{
+	
+	background-color: rgb(9, 191, 243);
+	border:5px;
+	color:#f5f6fa;
+	font: 18pt &quot;Leelawadee&quot;;
+	
+}
+
+QPushButton#Encryption:hover{
+	
+	background-color: rgb(9, 169, 206);
+	border:5px;
+	color:#f5f6fa;
+	font: 18pt &quot;Leelawadee&quot;;
+}</string>
+              </property>
+              <property name="text">
+               <string>Encryption</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="Decryption">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>145</width>
+                <height>53</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton#Decryption{
+	
+	background-color: rgb(9, 191, 243);
+	border:5px;
+	color:#f5f6fa;
+	font: 18pt &quot;Leelawadee&quot;;
+	
+}
+
+QPushButton#Decryption:hover{
+	
+	background-color: rgb(9, 169, 206);
+	border:5px;
+	color:#f5f6fa;
+	font: 18pt &quot;Leelawadee&quot;;
+}</string>
+              </property>
+              <property name="text">
+               <string>Decryption</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="saveas">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>145</width>
+                <height>53</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton#saveas{
+	
+	background-color: rgb(9, 191, 243);
+	border:5px;
+	color:#f5f6fa;
+	font: 18pt &quot;Leelawadee&quot;;
+	
+}
+
+QPushButton#saveas:hover{
+	
+	background-color: rgb(9, 169, 206);
+	border:5px;
+	color:#f5f6fa;
+	font: 18pt &quot;Leelawadee&quot;;
+}</string>
+              </property>
+              <property name="text">
+               <string>Save As</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="output">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>145</width>
+                <height>53</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton#output{
+	
+	background-color: rgb(9, 191, 243);
+	border:5px;
+	color:#f5f6fa;
+	font: 18pt &quot;Leelawadee&quot;;
+	
+}
+
+QPushButton#output:hover{
+	
+	background-color: rgb(9, 169, 206);
+	border:5px;
+	color:#f5f6fa;
+	font: 18pt &quot;Leelawadee&quot;;
+}</string>
+              </property>
+              <property name="text">
+               <string>OutPut</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="0" margin="0"/>
+ <resources/>
+ <connections/>
+</ui>

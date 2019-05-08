@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>736</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QWidget" name="BackGround" native="true">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(241, 242, 242);</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0" colspan="2">
+        <widget class="QWidget" name="Header" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>700</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(46, 17, 45);</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QLabel" name="PrgramName">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(241, 242, 242);
+font: 75 20pt &quot;Agency FB&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Messages Encryption</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QWidget" name="widget" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>170</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(201, 40, 62);</string>
+         </property>
+         <widget class="QWidget" name="">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>172</width>
+            <height>352</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="sizeConstraint">
+            <enum>QLayout::SetDefaultConstraint</enum>
+           </property>
+           <item>
+            <widget class="QPushButton" name="HomeButton">
+             <property name="minimumSize">
+              <size>
+               <width>170</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton#HomeButton {
+   		background-color: &quot;#C9283E&quot;;
+		color: &quot;#F1F2F2&quot;;
+		Border:0px;			
+		font: 75 18pt &quot;Arial&quot;;
+}
+
+QPushButton#HomeButton:hover {
+    
+		background-color: &quot;#C9283E&quot;;
+		color: &quot;#F1F2F2&quot;;
+		Border:0px;		
+		font: 75 20pt &quot;Arial&quot;;
+		
+		background-image: url(:/Images/Hover.jpg);
+}
+
+QPushButton#HomeButton:pressed {
+        
+		background-color: &quot;#EA6380&quot;;
+		color: &quot;#2E112D&quot;;
+		Border:0px;		
+		font: 75 20pt &quot;Arial&quot;;
+		
+	background-image: url(:/Images/bk.jpg);
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Home</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="Group1Button">
+             <property name="minimumSize">
+              <size>
+               <width>170</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton#Group1Button {
+   		background-color: &quot;#C9283E&quot;;
+		color: &quot;#F1F2F2&quot;;
+		Border:0px;		
+		font: 75 18pt &quot;Arial&quot;;
+}
+
+QPushButton#Group1Button:hover {
+    
+		background-color: &quot;#C9283E&quot;;
+		color: &quot;#F1F2F2&quot;;
+		Border:0px;		
+		font: 75 20pt &quot;Arial&quot;;
+		background-image: url(:/Images/Hover.jpg);
+}
+
+QPushButton#Group1Button:pressed {
+        
+		background-color: &quot;#EA6380&quot;;
+		color: &quot;#2E112D&quot;;
+		Border:0px;		
+		font: 75 18pt &quot;Arial&quot;;
+		background-image: url(:/Images/bk.jpg);
+}</string>
+             </property>
+             <property name="text">
+              <string>Group I</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="Group2Button">
+             <property name="minimumSize">
+              <size>
+               <width>170</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton#Group2Button {
+   		background-color: &quot;#C9283E&quot;;
+		color: &quot;#F1F2F2&quot;;
+		Border:0px;		
+		font: 75 18pt &quot;Arial&quot;;
+}
+
+QPushButton#Group2Button:hover {
+    
+		background-color: &quot;#C9283E&quot;;
+		color: &quot;#F1F2F2&quot;;
+		Border:0px;		
+		font: 75 20pt &quot;Arial&quot;;
+		
+		background-image: url(:/Images/Hover.jpg);
+}
+
+QPushButton#Group2Button:pressed {
+        
+		background-color: &quot;#EA6380&quot;;
+		color: &quot;#2E112D&quot;;
+		Border:0px;		
+		font: 75 18pt &quot;Arial&quot;;
+		
+	background-image: url(:/Images/bk.jpg);
+}</string>
+             </property>
+             <property name="text">
+              <string> Group II</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="Group3Button">
+             <property name="minimumSize">
+              <size>
+               <width>170</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton#Group3Button {
+   		background-color: &quot;#C9283E&quot;;
+		color: &quot;#F1F2F2&quot;;
+		Border:0px;		
+		font: 75 18pt &quot;Arial&quot;;
+}
+
+QPushButton#Group3Button:hover {
+    
+		background-color: &quot;#C9283E&quot;;
+		color: &quot;#F1F2F2&quot;;
+		Border:0px;		
+		font: 75 20pt &quot;Arial&quot;;
+		background-image: url(:/Images/Hover.jpg);
+}
+
+QPushButton#Group3Button:pressed {
+        
+		background-color: &quot;#EA6380&quot;;
+		color: &quot;#2E112D&quot;;
+		Border:0px;		
+		font: 75 18pt &quot;Arial&quot;;
+		
+	background-image: url(:/Images/bk.jpg);
+}</string>
+             </property>
+             <property name="text">
+              <string>  Group III</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="OutputButton">
+             <property name="minimumSize">
+              <size>
+               <width>170</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton#OutputButton {
+   		background-color: &quot;#C9283E&quot;;
+		color: &quot;#F1F2F2&quot;;
+		Border:0px;		
+		font: 75 18pt &quot;Arial&quot;;
+}
+
+QPushButton#OutputButton:hover {
+    
+		background-color: &quot;#C9283E&quot;;
+		color: &quot;#F1F2F2&quot;;
+		Border:0px;		
+		font: 75 20pt &quot;Arial&quot;;
+		background-image: url(:/Images/Hover.jpg);
+}
+
+QPushButton#OutputButton:pressed {
+        
+		background-color: &quot;#EA6380&quot;;
+		color: &quot;#2E112D&quot;;
+		Border:0px;		
+		font: 75 18pt &quot;Arial&quot;;
+		background-image: url(:/Images/bk.jpg);	
+}</string>
+             </property>
+             <property name="text">
+              <string>OutPut</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="SaveAsButton">
+             <property name="minimumSize">
+              <size>
+               <width>170</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton#SaveAsButton {
+   		background-color: &quot;#C9283E&quot;;
+		color: &quot;#F1F2F2&quot;;
+		Border:0px;		
+		font: 75 18pt &quot;Arial&quot;;
+}
+
+QPushButton#SaveAsButton:hover {
+    
+		background-color: &quot;#C9283E&quot;;
+		color: &quot;#F1F2F2&quot;;
+		Border:0px;		
+		font: 75 20pt &quot;Arial&quot;;
+		background-image: url(:/Images/Hover.jpg);
+}
+
+QPushButton#SaveAsButton:pressed {
+        
+		background-color: &quot;#EA6380&quot;;
+		color: &quot;#2E112D&quot;;
+		Border:0px;		
+		font: 75 18pt &quot;Arial&quot;;
+		background-image: url(:/Images/bk.jpg);
+}</string>
+             </property>
+             <property name="text">
+              <string>  Save As</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="Auther_Button">
+             <property name="minimumSize">
+              <size>
+               <width>170</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton#Auther_Button {
+   		background-color: &quot;#C9283E&quot;;
+		color: &quot;#F1F2F2&quot;;
+		Border:0px;		
+		font: 75 18pt &quot;Arial&quot;;
+}
+
+QPushButton#Auther_Button:hover {
+    
+		background-color: &quot;#C9283E&quot;;
+		color: &quot;#F1F2F2&quot;;
+		Border:0px;		
+		font: 75 20pt &quot;Arial&quot;;
+		background-image: url(:/Images/Hover.jpg);
+}
+
+QPushButton#Auther_Button:pressed {
+        
+		background-color: &quot;#EA6380&quot;;
+		color: &quot;#2E112D&quot;;
+		Border:0px;		
+		font: 75 18pt &quot;Arial&quot;;
+		background-image: url(:/Images/bk.jpg);
+}</string>
+             </property>
+             <property name="text">
+              <string>Auther</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QStackedWidget" name="stackedWidget">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="currentIndex">
+          <number>1</number>
+         </property>
+         <widget class="QWidget" name="Home">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>40</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QWidget" name="Group1">
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="3" column="0">
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <widget class="QPushButton" name="pushButton">
+               <property name="text">
+                <string>PushButton</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_2">
+               <property name="text">
+                <string>PushButton</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_3">
+               <property name="text">
+                <string>PushButton</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="1" column="0">
+            <layout class="QFormLayout" name="formLayout">
+             <item row="0" column="0">
+              <widget class="QComboBox" name="comboBox">
+               <property name="minimumSize">
+                <size>
+                 <width>150</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Caeser Cipher</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Atbsh Cipher</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>ROT13 Cipher</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="lineEdit">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="2" column="0">
+            <widget class="QTextEdit" name="textEdit">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);
+margin:5px;</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Sunken</enum>
+             </property>
+             <property name="lineWidth">
+              <number>1</number>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QWidget" name="widget_2" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(234, 57, 87);</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="Group2"/>
+         <widget class="QWidget" name="Group3"/>
+         <widget class="QWidget" name="output"/>
+         <widget class="QWidget" name="Auther"/>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="0" margin="0"/>
+ <resources/>
+ <connections/>
+</ui>
